@@ -1,0 +1,16 @@
+image: node:20-alpine
+
+stages:
+  - test
+
+run_api_tests:
+  stage: test
+  before_script:
+    - npm ci
+  script:
+    - npm test -- postmanEnvId="${POSTMAN_ENV_ID}"
+  artifacts:
+    when: always
+    paths:
+      - output/
+    expire_in: 30 days

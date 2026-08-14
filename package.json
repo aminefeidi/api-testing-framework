@@ -1,0 +1,19 @@
+{
+  "name": "api-testing-framework",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "download:collections": "node scripts/download-postman-collections.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1",
+    "postman-collection": "^4.5.0"
+  }
+}

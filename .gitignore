@@ -1,0 +1,10 @@
+/node_modules
+/output
+/bugs
+.env
+CLAUDE.md
+
+# Keep the project-local Pi extension; ignore its runtime state and backups.
+/.pi/*
+!/.pi/extensions/
+!/.pi/extensions/postman.ts
